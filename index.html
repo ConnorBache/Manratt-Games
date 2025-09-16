@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="token_1.png">
+
+  <title>Manratt Games</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/259dbc7eb6.js" crossorigin="anonymous"></script>
+
+  <!-- Custom Styles -->
+  <style>
+    /* Header Logo */
+    .brand-logo {
+      border-radius: 50%;
+      transition: transform 0.2s ease-in-out;
+    }
+    .brand-logo:hover {
+      transform: scale(1.1);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('background.jpg') center/cover no-repeat;
+      height: auto; /* Adjust height dynamically */
+      min-height: 40vh; /* Ensure it doesn't get too short */
+      padding-top: 20px; /* Add some spacing at the top */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 40px; /* Added more bottom padding */
+    }
+    .hero h1 {
+      font-weight: bold;
+    }
+
+    /* Explore My Work Button */
+    .explore-btn {
+      background: url('token_1.png') center/cover no-repeat;
+      width: 200px;  /* Increased size */
+      height: 200px;  /* Increased size */
+      border: none;
+      transition: transform 0.3s ease-in-out;
+    }
+    .explore-btn:hover {
+      transform: scale(1.2);
+    }
+
+    /* Text Below Button */
+    .explore-text {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px; /* Space between button and text */
+    }
+
+    /* Dropdown Styling */
+    .custom-dropdown-btn {
+      background-color: transparent;
+      border: none;
+      color: black;
+      font-weight: bold;
+    }
+    .custom-dropdown-menu {
+      background-color: white;
+      border: 1px solid #ccc;
+    }
+    .custom-dropdown-item:hover {
+      background-color: #f8f9fa;
+    }
+
+    /* Discord Icon Hover Effect */
+    .discord-icon i {
+      transition: color 0.3s;
+    }
+    .discord-icon:hover i {
+      color: #5865F2; /* Official Discord Blue */
+    }
+
+    /* Projects Card Hover Effect */
+    .projects .card {
+      border: none;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    .projects .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Make navigation tabs bold */
+    .custom-dropdown-btn {
+      font-weight: bold !important;
+    }
+
+    /* Social media footer positioning */
+    .social-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    /* Add padding to main content to prevent footer overlap */
+    body {
+      padding-bottom: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="token_1.png" alt="Logo" width="60" height="60" class="brand-logo">
+          <div class="ms-2">Manratt Games</div>
+        </a>
+
+        <!-- Navigation Links & Dropdowns -->
+        <div class="d-flex flex-grow-1 justify-content-center">
+          <!-- About Me Dropdown -->
+          <div class="dropdown me-2">
+            <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="aboutDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              About Me
+            </button>
+            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item custom-dropdown-item" href="resume.html">Resume</a></li>
+              <li><a class="dropdown-item custom-dropdown-item" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Game Design Dropdown -->
+          <div class="dropdown me-2">
+            <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="gameDesignDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Game Design
+            </button>
+            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="gameDesignDropdown">
+              <li><a class="dropdown-item custom-dropdown-item" href="itch.html">Itch.io</a></li>
+              <li><a class="dropdown-item custom-dropdown-item" href="projects.html">WIP Projects</a></li>
+            </ul>
+          </div>
+
+          <!-- Computer Science Dropdown -->
+          <div class="dropdown">
+            <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="compsciDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Computer Science
+            </button>
+            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="compsciDropdown">
+              <li><a class="dropdown-item custom-dropdown-item" href="compsciProjects.html">Projects</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero text-center text-dark d-flex align-items-center justify-content-center">
+      <div class="container">
+        <h1 class="display-3">Manratt Games</h1>
+        <p class="lead">Game Developer | Wargamer | Programmer</p>
+        <p class="hero-description">I create strategy games, RPGs, and custom mechanics that blend tactical depth with compelling storytelling.</p>
+        <div class="mt-3">
+          <a href="projects.html">
+            <button class="explore-btn"></button>
+          </a>
+          <p class="explore-text">Explore My Work</p> <!-- Text below the button -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-me py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2>Who Am I?</h2>
+            <p>My name is Connor Bache, otherwise known as Manratt Games, or just Ratt if you don't have time. I'm a game developer, wargamer, and programmer with a passion for designing combat system after combat system. My projects include published wargames, tabletop RPGs, video games, and even Minecraft plugins.</p>
+            <p>Most recently I've been working as a lead designer on <b>"Apollyon: Corpse Gods"</b>, an RPG that uses Minecraft as a virtual tabletop (trust me, it works better than it sounds). But I've also published wargames such as the dark fantasy <b>Cut & Run</b>, and am working to finalize my oldest project <b>Demihuman Combat</b>.</p>
+            <a href="contact.html" class="btn btn-dark">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media -->
+    <footer class="bg-dark text-white text-center py-4 social-footer">
+      <h4>Social Media</h4>
+      <a href="https://discord.gg/zeEZjNGdTc" class="text-white mx-2 discord-icon" target="_blank">
+        <i class="fa-brands fa-discord fa-2x"></i>
+      </a>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button type="button" class="btn btn-dark" id="back-to-top">Back to Top</button>
+  </main>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
