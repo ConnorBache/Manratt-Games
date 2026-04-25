@@ -155,6 +155,11 @@ main {
   text-decoration: none;
 }
 
+.explore-link:hover,
+.explore-link:focus {
+  color: #8ff0bd;
+}
+
 .explore-btn {
   display: block;
   border-radius: 50%;
@@ -165,11 +170,20 @@ main {
   display: inline-block;
   padding: 0.6rem 1rem;
   border-radius: 999px;
-  background-color: #ffffff;
+  background-color: rgba(86, 227, 159, 0.12);
+  border: 1px solid #56e39f;
   color: #56e39f;
+  box-shadow: 0 0 18px rgba(86, 227, 159, 0.16);
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   letter-spacing: 0.01em;
+}
+
+.explore-link:hover .explore-text,
+.explore-link:focus .explore-text {
+  border-color: #8ff0bd;
+  background-color: rgba(86, 227, 159, 0.18);
+  color: #8ff0bd;
 }
 
 .projects-container,
