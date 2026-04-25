@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@600;700;800&family=Inconsolata:wght@400;500;700;900&family=Orbitron:wght@500;700&family=Rye&display=swap");
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  padding-bottom: 96px;
+  background:
+    radial-gradient(circle at top left, rgba(255, 216, 77, 0.08), transparent 28rem),
+    radial-gradient(circle at bottom right, rgba(88, 101, 242, 0.12), transparent 32rem),
+    linear-gradient(180deg, #031022 0%, #061a33 52%, #020914 100%);
+  color: #f3f7ff;
+  font-family: "Inconsolata", monospace;
+}
+
+a {
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+}
+
+a:hover {
+  color: #ffd84d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.04em;
+}
+
+p,
+li,
+span {
+  color: #ffffff;
+  font-family: "Inconsolata", monospace;
+}
+
+b,
+strong {
+  color: #ffd84d;
+  font-weight: inherit;
+  text-shadow: 0 1px 2px rgba(36, 33, 31, 0.85);
+}
+
+.navbar {
+  background-color: #071a33 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 2px 14px rgba(4, 16, 32, 0.42);
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  font-family: "Rye", serif;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.brand-logo {
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(36, 33, 31, 0.18);
+  transition: transform 0.2s ease-in-out;
+}
+
+.brand-logo:hover {
+  transform: scale(1.06);
+}
+
+.custom-dropdown-btn {
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+}
+
+.custom-dropdown-btn:hover,
+.custom-dropdown-btn:focus {
+  color: #ffd84d;
+}
+
+.custom-dropdown-menu {
+  background-color: #0d2748;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 12px 28px rgba(4, 16, 32, 0.36);
+}
+
+.custom-dropdown-item {
+  color: #ffffff;
+}
+
+.custom-dropdown-item:hover,
+.custom-dropdown-item:focus {
+  background-color: #14365f;
+  color: #ffd84d;
+}
+
+main {
+  position: relative;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(180deg, rgba(3, 16, 34, 0.82), rgba(2, 9, 20, 0.94));
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-description {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+}
+
+.lead {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+}
+
+.explore-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.explore-btn {
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(36, 33, 31, 0.24);
+}
+
+.explore-text {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  background-color: #ffffff;
+  color: #071a33;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.projects-container,
+.published-container,
+.contact-container,
+.resume-container,
+.game-container {
+  background-color: rgba(7, 26, 51, 0.82) !important;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 24px rgba(4, 16, 32, 0.34);
+}
+
+.project-card {
+  background-color: rgba(13, 39, 72, 0.9) !important;
+  color: #ffffff !important;
+}
+
+.project-card,
+.game-link,
+.itch-link,
+.wgv-link,
+.discord-link,
+.character-sheet-link {
+  font-family: "Orbitron", sans-serif;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.project-card:hover,
+.game-link:hover,
+.itch-link:hover,
+.wgv-link:hover,
+.discord-link:hover,
+.character-sheet-link:hover {
+  transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+  border-color: #ffffff;
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  border-color: #ffd84d;
+  background-color: #ffd84d;
+  color: #071a33;
+}
+
+.game-links {
+  flex-wrap: wrap;
+}
+
+.social-footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.social-footer h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.discord-icon i {
+  transition: color 0.2s ease-in-out;
+}
+
+.discord-icon:hover i {
+  color: #5865f2;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding-top: 1rem;
+  }
+
+  .navbar-nav,
+  .navbar-nav .dropdown {
+    width: 100%;
+  }
+
+  .custom-dropdown-btn {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body {
+    padding-bottom: 112px;
+  }
+
+  .hero {
+    min-height: 56vh;
+  }
+
+  .explore-btn {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .projects-container,
+  .published-container,
+  .contact-container,
+  .resume-container,
+  .game-container {
+    padding: 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

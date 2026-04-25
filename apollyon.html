@@ -7,13 +7,10 @@
   <link rel="icon" type="image/png" href="token_1.png">
   <title>Apollyon: Corpse Gods - Manratt Games</title>
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
-
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="style.css">
   <!-- Font Awesome for Icons -->
   <script src="https://kit.fontawesome.com/259dbc7eb6.js" crossorigin="anonymous"></script>
 
@@ -74,25 +71,6 @@
       color: white;
       text-decoration: none;
     }
-
-    /* Make navigation tabs bold */
-    .custom-dropdown-btn {
-      font-weight: bold !important;
-    }
-
-    /* Social media footer positioning */
-    .social-footer {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-    }
-
-    /* Add padding to main content to prevent footer overlap */
-    body {
-      padding-bottom: 80px;
-    }
   </style>
 </head>
 
@@ -107,8 +85,14 @@
           <div class="ms-2">Manratt Games</div>
         </a>
 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
         <!-- Navigation Links & Dropdowns -->
-        <div class="d-flex flex-grow-1 justify-content-center">
+        <div class="collapse navbar-collapse" id="mainNavbar">
+        <div class="navbar-nav mx-auto flex-lg-row align-items-lg-center">
           <!-- About Me Dropdown -->
           <div class="dropdown me-2">
             <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="aboutDropdown"
@@ -144,6 +128,7 @@
             </ul>
           </div>
         </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -168,7 +153,7 @@
       <div class="py-3">
         <h3>Character Management</h3>
         <p>Track your character's progress, attributes, and inventory with our comprehensive character sheet.</p>
-        <a href="https://connorbache.github.io/Apollyon-Character-Sheet/Apollyon%20Site/index.html" target="_blank" class="character-sheet-link">
+        <a href="https://connorbache.github.io/Apollyon-Character-Sheet/Apollyon%20Site/index.html" target="_blank" rel="noopener noreferrer" class="character-sheet-link">
           <i class="fa-solid fa-scroll"></i> Browser Based Character Sheet
         </a>
       </div>
@@ -176,7 +161,7 @@
       <div class="py-3">
         <h3>Join the Community</h3>
         <p>Connect with other players, stay updated, and join the adventure.</p>
-        <a href="https://discord.gg/xT2YsSBT29" target="_blank" class="discord-link">
+        <a href="https://discord.gg/xT2YsSBT29" target="_blank" rel="noopener noreferrer" class="discord-link">
           <i class="fa-brands fa-discord"></i> Join the Discord
         </a>
       </div>
@@ -187,7 +172,7 @@
   <!-- Social Media -->
   <footer class="bg-dark text-white text-center py-4 social-footer">
     <h4>Social Media</h4>
-    <a href="https://discord.gg/zeEZjNGdTc" class="text-white mx-2 discord-icon" target="_blank">
+    <a href="https://discord.gg/zeEZjNGdTc" class="text-white mx-2 discord-icon" target="_blank" rel="noopener noreferrer">
       <i class="fa-brands fa-discord fa-2x"></i>
     </a>
   </footer>

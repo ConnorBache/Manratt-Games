@@ -7,13 +7,10 @@
   <link rel="icon" type="image/png" href="token_1.png">
   <title>Demihuman Combat - Manratt Games</title>
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
-
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="style.css">
   <!-- Font Awesome for Icons -->
   <script src="https://kit.fontawesome.com/259dbc7eb6.js" crossorigin="anonymous"></script>
 
@@ -44,6 +41,7 @@
     .game-links {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 20px;
     }
     .game-link {
@@ -66,30 +64,7 @@
       background-color: #1b2838;
     }
     .download-link:hover {
-      background-color: #007bff;
-    }
-    .game-logo {
-      width: 100px;
-      height: 100px;
-    }
-
-    /* Make navigation tabs bold */
-    .custom-dropdown-btn {
-      font-weight: bold !important;
-    }
-
-    /* Social media footer positioning */
-    .social-footer {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-    }
-
-    /* Add padding to main content to prevent footer overlap */
-    body {
-      padding-bottom: 80px;
+      background-color: #5a32a3;
     }
   </style>
 </head>
@@ -105,8 +80,14 @@
           <div class="ms-2">Manratt Games</div>
         </a>
 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
         <!-- Navigation Links & Dropdowns -->
-        <div class="d-flex flex-grow-1 justify-content-center">
+        <div class="collapse navbar-collapse" id="mainNavbar">
+        <div class="navbar-nav mx-auto flex-lg-row align-items-lg-center">
           <!-- About Me Dropdown -->
           <div class="dropdown me-2">
             <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="aboutDropdown"
@@ -142,6 +123,7 @@
             </ul>
           </div>
         </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -154,14 +136,14 @@
         <h1>Demihuman Combat</h1>
       </div>
       <p class="game-summary">
-        **Demihuman Combat** is a fast-paced tabletop skirmish wargame where players build factions of unique characters,  
+        <strong>Demihuman Combat</strong> is a fast-paced tabletop skirmish wargame where players build factions of unique characters,  
         leveraging tactical positioning, unit abilities, and strategic activations. Designed for competitive play,  
         each match is a tense battle for supremacy in a world filled with heroes and villains alike.
       </p>
 
       <div class="game-links">
         <!-- Steam Workshop Link -->
-        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3006857302" target="_blank" class="game-link steam-link">
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3006857302" target="_blank" rel="noopener noreferrer" class="game-link steam-link">
           <i class="fa-brands fa-steam"></i> Play on Tabletop Simulator
         </a>
 
@@ -177,7 +159,7 @@
   <!-- Social Media -->
   <footer class="bg-dark text-white text-center py-4 social-footer">
     <h4>Social Media</h4>
-    <a href="https://discord.gg/zeEZjNGdTc" class="text-white mx-2 discord-icon" target="_blank">
+    <a href="https://discord.gg/zeEZjNGdTc" class="text-white mx-2 discord-icon" target="_blank" rel="noopener noreferrer">
       <i class="fa-brands fa-discord fa-2x"></i>
     </a>
   </footer>
