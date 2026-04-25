@@ -49,6 +49,21 @@
     .resume-list li {
       margin-bottom: 10px;
     }
+    .project-entry {
+      margin-bottom: 18px;
+    }
+    .project-entry h3 {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    .project-entry p {
+      margin-bottom: 6px;
+    }
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
   </style>
 </head>
 
@@ -60,7 +75,7 @@
         <!-- Logo -->
         <a class="navbar-brand d-flex align-items-center" href="index.html">
           <img src="token_1.png" alt="Logo" width="60" height="60" class="brand-logo">
-          <div class="ms-2">Manratt Games</div>
+          <div class="ms-2">Connor Bache</div>
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
@@ -99,7 +114,7 @@
           <div class="dropdown">
             <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="compsciDropdown"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Computer Science
+              Software
             </button>
             <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="compsciDropdown">
               <li><a class="dropdown-item custom-dropdown-item" href="compsciProjects.html">Projects</a></li>
@@ -155,14 +170,55 @@
       </section>
 
       <section class="resume-section">
+        <h2>Selected Projects</h2>
+
+        <div class="project-entry">
+          <h3>Apollyon Character Tools</h3>
+          <p>Built browser-based tools for a custom tabletop RPG ecosystem, including a character sheet, spell builder, monster sheet, and encounter calculator. These projects translate complex game rules into usable web interfaces.</p>
+          <div class="project-links">
+            <a href="https://github.com/ConnorBache/Apollyon-Character-Sheet" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">Character Sheet</a>
+            <a href="https://github.com/ConnorBache/Spell-Builder" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">Spell Builder</a>
+            <a href="https://github.com/ConnorBache/Apollyon-Monster-Sheet" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">Monster Sheet</a>
+            <a href="https://github.com/ConnorBache/Encounter-Calculator" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">Encounter Calculator</a>
+          </div>
+        </div>
+
+        <div class="project-entry">
+          <h3>Die Engraver</h3>
+          <p>Created a Python project that uses the OnShape API to generate a custom die with each side engraved from black-and-white image input, showing API automation and practical tool-building.</p>
+          <p><a href="https://github.com/ConnorBache/Die-Engraver" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">View on GitHub</a></p>
+        </div>
+
+        <div class="project-entry">
+          <h3>Web Utility Projects</h3>
+          <p>Developed focused HTML/CSS/JavaScript tools including a business price estimator, a hex map generator, and game-math helpers for design workflows.</p>
+          <div class="project-links">
+            <a href="https://github.com/ConnorBache/First-Choice-Sealing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">Price Estimator</a>
+            <a href="https://github.com/ConnorBache/hexMapMaker" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">Hex Map Maker</a>
+            <a href="https://github.com/ConnorBache/MathForZach" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">MathForZach</a>
+          </div>
+        </div>
+
+        <div class="project-entry">
+          <h3>C Programming Libraries</h3>
+          <p>Completed lower-level programming projects demonstrating arrays, structs, unions, typedefs, data modeling, and algorithm fundamentals in C.</p>
+          <div class="project-links">
+            <a href="https://github.com/ConnorBache/ArrayLib" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">ArrayLib</a>
+            <a href="https://github.com/ConnorBache/TypeLib" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">TypeLib</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume-section">
         <h2>Technical Skills</h2>
         <ul class="resume-list">
-          <li>Skilled with JavaScript, HTML, CSS, Python, and Java</li>
-          <li>Utilized Apache NetBeans to make GUI applications and integrate databases</li>
-          <li>Used a MySQL database to enhance applications</li>
-          <li>Proficient in Microsoft Visual Studio</li>
-          <li>Understands basic Excel/Google Sheets functions</li>
-          <li>Used C# to design game mechanics in Unity.</li>
+          <li>Languages: JavaScript, HTML, CSS, Python, Java, C, and C#</li>
+          <li>Web development: responsive static sites, interactive browser tools, forms, calculators, and GitHub Pages projects</li>
+          <li>Game tooling: character sheets, spell builders, encounter calculators, hex map utilities, and tabletop RPG/wargame support tools</li>
+          <li>API automation: Python scripting with external APIs, including OnShape-based generation workflows</li>
+          <li>Computer science fundamentals: C arrays, structs, unions, typedefs, data modeling, and algorithmic problem solving</li>
+          <li>Application development: Java GUI work in Apache NetBeans with MySQL database integration</li>
+          <li>Tools: GitHub, Visual Studio, Unity/C#, Excel, and Google Sheets</li>
         </ul>
       </section>
     </div>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@600;700;800&family=Inconsolata:wght@400;500;700;900&family=Orbitron:wght@500;700&family=Rye&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;900&family=Source+Code+Pro:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
 
 html {
   min-height: 100%;
@@ -16,12 +16,21 @@ body {
 }
 
 a {
-  color: #ffffff;
-  font-family: "Orbitron", sans-serif;
+  color: #56e39f;
+  font-family: inherit;
 }
 
 a:hover {
-  color: #ffd84d;
+  color: #8ff0bd;
+}
+
+a.text-white {
+  color: #56e39f !important;
+}
+
+a.text-white:hover,
+a.text-white:focus {
+  color: #8ff0bd !important;
 }
 
 h1,
@@ -31,8 +40,12 @@ h4,
 h5,
 h6 {
   color: #ffffff;
-  font-family: "Cinzel", serif;
-  letter-spacing: 0.04em;
+  font-family: "Source Code Pro", "Courier New", monospace;
+  letter-spacing: 0.005em;
+}
+
+.terminal-heading {
+  color: #56e39f;
 }
 
 p,
@@ -57,9 +70,9 @@ strong {
 
 .navbar-brand {
   color: #ffffff !important;
-  font-family: "Rye", serif;
+  font-family: "Inconsolata", monospace;
   font-weight: 800;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
 
 .brand-logo {
@@ -74,7 +87,7 @@ strong {
 
 .custom-dropdown-btn {
   color: #ffffff;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
 }
 
@@ -90,13 +103,13 @@ strong {
 }
 
 .custom-dropdown-item {
-  color: #ffffff;
+  color: #56e39f;
 }
 
 .custom-dropdown-item:hover,
 .custom-dropdown-item:focus {
   background-color: #14365f;
-  color: #ffd84d;
+  color: #8ff0bd;
 }
 
 main {
@@ -127,9 +140,10 @@ main {
 }
 
 .lead {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 0.08em;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .explore-link {
@@ -137,7 +151,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
-  color: #ffffff;
+  color: #56e39f;
   text-decoration: none;
 }
 
@@ -152,9 +166,10 @@ main {
   padding: 0.6rem 1rem;
   border-radius: 999px;
   background-color: #ffffff;
-  color: #071a33;
-  font-family: "Orbitron", sans-serif;
-  letter-spacing: 0.02em;
+  color: #56e39f;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
 .projects-container,
@@ -179,8 +194,12 @@ main {
 .wgv-link,
 .discord-link,
 .character-sheet-link {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn {
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .project-card:hover,
@@ -193,16 +212,16 @@ main {
 }
 
 .btn-outline-primary {
-  border-color: #ffffff;
-  color: #ffffff;
-  font-family: "Orbitron", sans-serif;
+  border-color: #56e39f;
+  color: #56e39f;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .btn-outline-primary:hover,
 .btn-outline-primary:focus {
-  border-color: #ffd84d;
-  background-color: #ffd84d;
-  color: #071a33;
+  border-color: #8ff0bd;
+  background-color: rgba(86, 227, 159, 0.16);
+  color: #8ff0bd;
 }
 
 .game-links {
